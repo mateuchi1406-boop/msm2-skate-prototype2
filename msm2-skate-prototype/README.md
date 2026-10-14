@@ -2,11 +2,28 @@
 
 This repo contains code for MSM2-Script-SDK and a template script that uses it.
 
+The template is adapted as the first `SM2-Skateboard-Prototype` slice. It is a
+single-player movement/trick input test and does not include game files or
+assets from Skate 3.
+
 The main purpose of the SDK script is to consolidate knowledge, allowing other scripts to depend on it. If such scripts don't hook any functions on their own and only rely on SDK, only the SDK will have to be updated when the game updates.
 
 # Usage
 
 Dependent scripts can use the .lib by including .h files from 'MSM2-Script-SDK/game/'.
+
+## Prototype controls
+
+- Xbox **View + Menu** toggles skate movement (`F7` also works).
+- Xbox **left stick** moves (`WASD` also works).
+- Xbox **A** performs an ollie (`Space` also works).
+- Xbox **right trigger** increases speed (`Shift` also works).
+- Xbox **right stick (R3)** recognizes ollie, nollie, kickflip, heelflip and
+  frontside/backside shuvit flicks.
+
+The current public SDK exposes the hero transform, but not a documented model
+spawning, attachment or animation API. The trick input recognizer is therefore
+implemented before the visible board and character animations.
 
 # Building
 

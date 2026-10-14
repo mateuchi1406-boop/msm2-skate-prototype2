@@ -58,11 +58,11 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Label="ScriptMetadata">
-    <ScriptName>MSM2-Script-Template</ScriptName>
-    <ScriptVersion>1.0.0</ScriptVersion>
+    <ScriptName>SM2-Skateboard-Prototype</ScriptName>
+    <ScriptVersion>0.1.0</ScriptVersion>
     <ScriptType>script</ScriptType>
-    <ScriptAuthor>Tkachov</ScriptAuthor>
-    <ScriptDependencies>MSM2-Script-SDK:&gt;=2.629.0</ScriptDependencies>
+    <ScriptAuthor>mateuchi1406-boop</ScriptAuthor>
+    <ScriptDependencies>MSM2-Script-SDK:&gt;=2.727.0</ScriptDependencies>
   </PropertyGroup>
   <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <VcpkgUseStatic>true</VcpkgUseStatic>
